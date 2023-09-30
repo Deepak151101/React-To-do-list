@@ -36,3 +36,148 @@
     transform: rotate(360deg);
   }
 }
+
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin: 30px 50px 0px 50px;
+  border: 2px;
+  box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.2) inset;
+  -webkit-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.2) inset;
+  -moz-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.2) inset;
+  padding: 20px;
+}
+
+h1 {
+  color: #333;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+FormControl {
+  margin-right: 10px;
+}
+
+Button[type="submit"] {
+  margin: 0 20px;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+#todo_input {
+  size: 1.3rem;
+}
+
+#todo_modal_box button{
+  margin: 0 20px;
+}
+
+/* Responsiveness for smaller screens - 768px */
+
+/* Center content and adjust styles for smaller screens */
+@media (max-width: 768px) {
+  .App {
+    /* align-items: center;
+    justify-content: center; */
+    height: 100vh;
+  }
+  
+  .form-control {
+    width: 100%;
+  }
+  
+  .todo_modal .paper {
+    width: 90%;
+    max-width: 300px;
+  }
+  
+  .todo_modal {
+    padding: 10px;
+  }
+  
+  .todo_list .MuiButton-root {
+    font-size: 14px;
+    width: 20%;
+    margin: 10px 10px;
+  }
+  
+  Button[type="submit"] {
+    width: 30%;
+    margin: 10px 10px;
+  }
+  
+  .todo_modal input {
+    margin: 10px 0;
+  }
+  
+  InputLabel {
+    font-size: 14px;
+  }
+}
+
+/* Responsiveness for screens up to 480px width */
+
+/* Center content vertically and horizontally */
+@media (max-width: 480px) {
+  .App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  /* Make text input full width */
+  .form-control {
+    width: 100%;
+  }
+
+  form label {
+    font-size: 10px;
+  }
+
+  /* Adjust modal width for better readability */
+  .todo_modal .paper {
+    width: 90%;
+    max-width: 300px;
+  }
+
+  /* Add padding to the modal for spacing */
+  .todo_modal {
+    padding: 10px;
+  }
+
+  /* Adjust button size and margin */
+  .todo_list .MuiButton-root {
+    font-size: 12px;
+    width: 50%;
+    margin: 10px 0;
+  }
+
+  /* Make the "Add ToDo" button full width */
+  Button[type="submit"] {
+    width: 30%;
+    margin: 10px 0;
+  }
+
+  /* Add margin to input fields for spacing */
+  .todo_modal {
+    width: 100%;
+    margin: 5px 5px;
+  }
+  .todo_modal input {
+    margin: 10px 0;
+    width: 70%;
+  }
+
+  /* Adjust font size for input labels */
+  InputLabel {
+    font-size: 14px;
+  }
+}
+
